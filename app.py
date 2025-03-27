@@ -50,7 +50,7 @@ def validade_X(validade_q, validade_d_m_a):
         return jsonify({
             "Cadastro ": datetime.today().strftime("%d/%m/%Y"),
             "Quantidade de tempo": int(validade_q),
-            "Tipo(dia,mes ou ano)": validade_d_m_a,
+            "Tipo(dia,semana,mes ou ano)": validade_d_m_a,
             "Validade": data_validade.strftime("%d/%m/%Y"),
         })
 
